@@ -3373,11 +3373,11 @@ spec:
         - --webhook=false
         env:
         - name: RELATED_IMAGE_SELINUXD
-          value: quay.io/security-profiles-operator/selinuxd
+          value: quay.io/ktalathi/v1-security-profiles-operator/selinuxd:v1-latest
         - name: RELATED_IMAGE_SELINUXD_EL8
           value: quay.io/security-profiles-operator/selinuxd-el8:latest
         - name: RELATED_IMAGE_SELINUXD_EL9
-          value: quay.io/security-profiles-operator/selinuxd-el9:latest
+          value: quay.io/ktalathi/v1-security-profiles-operator/selinuxd-el:v1-latest
         - name: RELATED_IMAGE_SELINUXD_FEDORA
           value: quay.io/security-profiles-operator/selinuxd-fedora:latest
         - name: OPERATOR_NAMESPACE
