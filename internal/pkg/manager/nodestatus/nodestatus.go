@@ -278,12 +278,12 @@ func (r *StatusReconciler) getDS(ctx context.Context, namespace string, l logr.L
 		return nil, fmt.Errorf("cannot list DS: %w", err)
 	}
 
-	if len(spodDSList.Items) != 1 {
-		retErr := errors.New("did not find exactly one DS")
-		l.Error(retErr, "Expected to find 1 DS", "len(dsList.Items)", len(spodDSList.Items))
+	// if len(spodDSList.Items) != 1 {
+	// 	retErr := errors.New("did not find exactly one DS")
+	// 	l.Error(retErr, "Expected to find 1 DS", "len(dsList.Items)", len(spodDSList.Items))
 
-		return nil, fmt.Errorf("listing DS: %w", retErr)
-	}
+	// 	return nil, fmt.Errorf("listing DS: %w", retErr)
+	// }
 
 	return &spodDSList.Items[0], nil
 }
